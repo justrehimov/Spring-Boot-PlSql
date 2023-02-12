@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@127.0.0.1:1521/XEPDB1
+    username: desofme
+    password: desofme
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      connection-test-query: SELECT 1 FROM DUAL
+      max-lifetime: 120000
+      connection-timeout: 10000
+      auto-commit: false
+server:
+  port: 8081
